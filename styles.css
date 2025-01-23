@@ -1,0 +1,120 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f0f8f0;
+    color: #2d3a3a;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin: 0;
+    color: #2a5934;
+    font-size: 2.5rem;
+}
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* Book Cards */
+.book-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.book-title {
+    font-size: 1.4rem;
+    margin: 0 0 15px 0;
+    color: #2a5934;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.book-info {
+    margin: 12px 0;
+    font-size: 0.95rem;
+}
+
+/* Buttons */
+.btn-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.new-book-btn {
+    background: #2a5934;
+    color: white;
+    padding: 12px 25px;
+}
+
+.toggle-btn {
+    background: #3f7ab3;
+    color: white;
+}
+
+.remove-btn {
+    background: #c44d4d;
+    color: white;
+}
+
+/* Form Dialog */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+    
+
+
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1>مكتبة الحكيم</h1>
+            <button class="new-book-btn" id="new-book-btn">Add New Book</button>
+        </header>
+
+        <dialog id="book-dialog">
+
+            <!-- form to upload new books with 3 input (name,author,pages) and checkbox for read -->
+            <form id="book-form">
+                <h2>Add New Book</h2>
+                <input type="text" id="title" placeholder="Book Title" required>
+                <input type="text" id="author" placeholder="Author" required>
+                <input type="number" id="pages" placeholder="Number of Pages" required>
+
+                <!-- the checkbox -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="read">
+                    <label for="read">Already read</label>
+                </div>
+
+
+                <!-- Btns to cancel and submit books -->
+                <div class="btn-group">
+                    <button type="submit">Add Book</button>
+                    <button type="button" id="cancel-btn">Cancel</button>
+                </div>
+
+            </form>
+        </dialog>
+
+        <!-- Organize the book in card shapes using a grid layout, similar to the last project I did on GitHub -->
+        <div class="book-grid" id="book-container"></div>
+
+        <!-- so mark zucc wont steal my work -->
+        <footer>
+            <p>Hisham's work • <a href="https://x.com/ytzz" target="_blank">@ytzz</a></p>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
