@@ -1,18 +1,43 @@
 
 // -----------------------------------------------
 
-// constructor for the books
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
+class Book{
+    constructor(title, author, pages, read) {
+            this.title = title;
+            this.author = author;
+            this.pages = pages;
+            this.read = read;
+        }
+
+        toggleRead() {
+            this.read = !this.read;
+        }
+
+        Bookinfo() {
+            console.log(`Name: ${this.title}, author: ${this.title}, pages: ${this.pages}, read: ${this.read}`)
+        }
+
 }
 
+// test
+let Book1 = new Book('Hishams life', 'H. the First', 511, true)
+Book1.Bookinfo()
+
+
+// constructor for the books
+
+// function Book(title, author, pages, read) {
+//     this.title = title;
+//     this.author = author;
+//     this.pages = pages;
+//     this.read = read;
+// }
+
 // flips between read or unread status
-Book.prototype.toggleRead = function() {
-    this.read = !this.read;
-};
+
+// Book.prototype.toggleRead = function() {
+//     this.read = !this.read;
+// };
 
 // -----------------------------------------------
 
@@ -64,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     addBookToLibrary('The Great Gatsby', 'F. Scott Fitzgerald', 218, true);
     addBookToLibrary('1984', 'George Orwell', 328, false);
+    
     displayBooks();
 
 
